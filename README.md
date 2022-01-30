@@ -47,7 +47,11 @@ The firmware is divided into several modules
 - Addon:
     - addon.py is an extension that must contain a function called addon(voltages)
       It is called in the main loop every interval time and allows actions based on the voltages or anything you want to be done regularly.
-      As this peace of code is small and independant from the main program, it can easily be edited and adapted to special tasks.
+      As this piece of code is small and independant from the main program, it can easily be edited and adapted to special tasks.
+
+## Special files / addons in the Pico file system
+- info.txt contains just one line with the word "LOGGER"
+  It may be used by the PC software to identify the Pico and to automatically select the right port  for the connection
   
 ## SD card file format
 The data are recorded in a CSV file, using tabs as delimiters, so that the data can easily be imported to plotting or spreadsheat programs.
@@ -64,8 +68,6 @@ For example:
 Time is coded in the form HH:MM:SS_T_D.M.YY
 
 
-## Special files / addons in the Pico file system
-- info.txt contains just one line with the word "LOGGER"
-  It may be used ba the PC software to identify the Pico and to automatically select the right port  for the connection
+
 
 
