@@ -39,9 +39,16 @@ The firmware is divided into several modules
 - Tools:
 	- blink.py and i2c_scan.py say hello and check the I2C bus
 	- filetools_02.py   creates unique numbered filenames according to a pattern, for example "logger_003.dat" if  "logger_002.dat" exists already.
+
+- Main program:
 	- logger_xx.py is the main logging program
 	- main.py imports blink, i2c_scan and logger_xx.py, so the logging program is automatically started.
-	
+
+- Addon:
+    - addon.py is an extension that must contain a function called addon(voltages)
+      It is called in the main loop every interval time and allows actions based on the voltages or anything you want to be done regularly.
+      As this peace of code is small and independant from the main program, it can easily be edited and adapted to special tasks.
+  
 ## SD card file format
 The data are recorded in a CSV file, using tabs as delimiters, so that the data can easily be imported to plotting or spreadsheat programs.
 
