@@ -1,7 +1,7 @@
 # Analog / serial logger with Raspi Pico
 This logger can record 4 analog channels or eventually a serial data stream
 
-Git page: https://github.com/jean-claudeF/logger
+Git page: https://github.com/jean-claudeF/analogger
 
 
 ![Picture](/Logger.jpg)
@@ -68,6 +68,8 @@ For example:
 Time is coded in the form HH:MM:SS_T_D.M.YY
 
 
+## TO DO
+- Allow configuration of serial baudrate and interval time (in a py file imported by logger_xx.py)
 
 
 
